@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Welcome extends Component {
+class Header extends Component {
 render() {
 return (
 
     <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-       <a href="https://github.com/hallyajgandco/Tracks" class="flex items-center">
+       <a href="https://github.com/hallyajgandco/Track" class="flex items-center" target="_blank"> 
           <img src="./logo_track.png" class="h-24 mr-3" alt=" Logo Track" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Track</span>
       </a>
@@ -38,4 +38,4 @@ return (
 }
  }
 
-export default Welcome;
+export default Header;
