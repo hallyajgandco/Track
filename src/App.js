@@ -1,8 +1,8 @@
 
 import './App.css';
-import { Navbar } from 'flowbite-react';
-import Greet from './components/footer';
-import Welcome from './components/header';
+// import { Navbar } from 'flowbite-react';
+import Footer from './components/footer';
+import Header from './components/header';
 import Main from './components/main';
 import AdresseTable from './components/api/fetch'
 import Message from './components/message';
@@ -13,9 +13,9 @@ export default function App() {
     <div className='App'> 
    
 
-<Welcome />
+<Header />
 <AdresseTable />
-<Greet />
+<Footer />
 
 
 
