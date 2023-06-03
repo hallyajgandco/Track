@@ -45,7 +45,8 @@ const AdresseTable = () => {
                 <tbody>
                     {data.map((item, index) => (
                         <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <td scope="row" className="px-6 py-3">{item.properties.label}</td>
+                            <td scope="row" className="px-6 py-3">{item.properties.name}</td>
+                            <td scope="row" className=" px-6 py-3">{item.properties.postcode}</td>
                             <td scope="row" className=" px-6 py-3">{item.properties.citycode}</td>
                         </tr>
                     ))}
