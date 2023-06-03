@@ -31,25 +31,27 @@ const AdresseTable = () => {
                     <span className="sr-only">Search</span>
                 </button>
             </form>
+            <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="col" className="px-6 py-3">Numéro</th>
-                        <th scope="col" className="px-6 py-3">Adresse </th>
-                        <th scope="col" className="px-6 py-3">Code Postal</th>
-                        <th scope="col" className="px-6 py-3">Ville</th>
-                        <th scope="col" className="px-6 py-3">Code Ville</th>
+                        
+                        <th scope="row" className="px-6 py-3">Adresse </th>
+                        <th scope="row" className="px-6 py-3">Code Postal</th>
+                       
+                        <th scope="row" className="px-6 py-3">Code Ville</th>
                     </tr>
                 </thead>
                 <tbody>
                     {data.map((item, index) => (
                         <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <td>{item.properties.label}</td>
-                            <td>{item.properties.citycode}</td>
+                            <td scope="row" className="px-6 py-3">{item.properties.label}</td>
+                            <td scope="row" className=" px-6 py-3">{item.properties.citycode}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
+            </div>
         </div>
     );
 }
